@@ -11,7 +11,7 @@ const nextConfig = {
   },
   output: "export",
   trailingSlash: true,
-  distDir: "dist",
+  distDir: "out",
 };
 
 export default nextConfig
