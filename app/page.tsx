@@ -14,13 +14,22 @@ export default function LandingPage() {
               <span className="text-xl font-bold">Stacky</span>
             </Link>
             <nav className="hidden md:flex items-center space-x-6 ml-6">
-              <Link href="#section1" className="text-sm font-medium transition-colors hover:text-primary">
+              <Link
+                href="#experience"
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
                 体験
               </Link>
-              <Link href="#section2" className="text-sm font-medium transition-colors hover:text-primary">
+              <Link
+                href="#features"
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
                 機能
               </Link>
-              <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
+              <Link
+                href="#pricing"
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
                 価格
               </Link>
             </nav>
@@ -72,11 +81,16 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="section1" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section
+          id="experience"
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">プロダクト体験</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  プロダクト体験
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Stackyがもたらす新しい作業体験
                 </p>
@@ -123,11 +137,13 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="section2" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="features" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">プロダクトの機能</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  プロダクトの機能
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   すべての操作がワンクリックで完結
                 </p>
@@ -167,18 +183,24 @@ export default function LandingPage() {
                 </div>
                 <h3 className="text-lg font-bold">クリック透過</h3>
                 <p className="text-muted-foreground text-center">
-                  Mouse event passthroughで下のウィンドウを操作しながら情報を表示できます。
+                  Mouse event
+                  passthroughで下のウィンドウを操作しながら情報を表示できます。
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section
+          id="pricing"
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">価格</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  価格
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   現状β版のため、全機能を無料で提供しています。
                 </p>
@@ -188,7 +210,9 @@ export default function LandingPage() {
                   <div className="flex flex-col gap-2">
                     <h3 className="text-2xl font-bold">β版</h3>
                     <p className="text-4xl font-bold">¥0</p>
-                    <p className="text-muted-foreground">すべての機能が利用可能</p>
+                    <p className="text-muted-foreground">
+                      すべての機能が利用可能
+                    </p>
                   </div>
                   <ul className="mt-6 space-y-2">
                     <li className="flex items-center gap-2">
@@ -266,11 +290,16 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="download" className="w-full py-12 md:py-24 lg:py-32 border-t">
+        <section
+          id="download"
+          className="w-full py-12 md:py-24 lg:py-32 border-t"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">今すぐ始めよう</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  今すぐ始めよう
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   macOS版をダウンロードして、新しい作業体験を手に入れましょう。
                 </p>
@@ -291,15 +320,21 @@ export default function LandingPage() {
             © {new Date().getFullYear()} Stacky. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               プライバシーポリシー
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               利用規約
             </Link>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
