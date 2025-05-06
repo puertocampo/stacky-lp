@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Stacky - かっちり開発、まったり作業",
   description: "ブラウザをピン留めして、やるべきことを視界から逃さない。",
-    generator: 'v0.dev'
-}
+};
 
 export default function RootLayout({
   children,
