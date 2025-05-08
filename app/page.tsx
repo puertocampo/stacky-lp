@@ -1,8 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Pin, Play, Eye, Layers, Bookmark, MousePointer2, Download } from "lucide-react"
-
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Pin,
+  Play,
+  Eye,
+  Layers,
+  Bookmark,
+  MousePointer2,
+  Download,
+} from "lucide-react";
+import MacAppDownloadButton from "@/components/ui/mac-app-download-button";
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -35,12 +43,17 @@ export default function LandingPage() {
             </nav>
           </div>
           <div>
-            <Link href="#download">
+            {/* <Link href="#download">
               <Button className="hidden sm:flex gap-2">
                 <Download className="h-4 w-4" />
                 macOS版ダウンロード
-              </Button>
-            </Link>
+              </Button> */}
+            <MacAppDownloadButton
+              downloadLink="https://example.com"
+              eventCategory="header"
+              eventLabel="app_download"
+            />
+            {/* </Link> */}
           </div>
         </div>
       </header>
@@ -58,12 +71,11 @@ export default function LandingPage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="#download">
-                    <Button size="lg" className="gap-2">
-                      <Download className="h-4 w-4" />
-                      macOS版ダウンロード
-                    </Button>
-                  </Link>
+                  <MacAppDownloadButton
+                    downloadLink="https://example.com"
+                    eventCategory="hero"
+                    eventLabel="app_download"
+                  />
                 </div>
               </div>
               <div className="flex items-center justify-center">
@@ -305,10 +317,15 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2 py-8">
-                <Button size="lg" className="w-full gap-2">
+                {/* <Button size="lg" className="w-full gap-2">
                   <Download className="h-4 w-4" />
                   macOS版ダウンロード
-                </Button>
+                </Button> */}
+                <MacAppDownloadButton
+                  downloadLink="https://example.com"
+                  eventCategory="download"
+                  eventLabel="app_download"
+                />
               </div>
             </div>
           </div>
