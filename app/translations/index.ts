@@ -43,4 +43,7 @@ export const translations = {
       terms: "利用規約",
     },
   },
-};
+} as const;
+
+const t: "en" | "ja" = "en";
+translations[t].download.title;

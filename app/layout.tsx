@@ -2,7 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-
+import Gtag from "@/components/analytics/gtag";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
@@ -17,11 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
+      <Gtag />
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
+        {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange> */}
+        {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
-  )
+  );
 }
