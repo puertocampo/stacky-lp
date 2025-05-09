@@ -67,7 +67,7 @@ export default function LandingPage() {
                     かっちり開発、まったり作業
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    ブラウザをピン留めして、やるべきことを視界から逃さない。
+                    ブラウザをピン留めして、タスクを視界から逃さない。
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
