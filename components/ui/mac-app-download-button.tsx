@@ -27,7 +27,7 @@ const MacAppDownloadButton = ({
   return (
     <Button
       size={size}
-      className={className}
+      className={`${className} gtm-download-button`}
       onClick={handleClick}
       data-gtm-event="app_download"
       data-gtm-label={gtmLabel}
