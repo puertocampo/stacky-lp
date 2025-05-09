@@ -13,26 +13,25 @@ const MacAppDownloadButton = ({
   downloadLink,
   className,
   size,
-  eventCategory,
-  eventLabel,
+  gtmLabel,
 }: {
   downloadLink: string;
-  eventCategory: GAEvents["event_category"];
-  eventLabel: GAEvents["event_label"];
   className?: string;
   size?: "lg" | "sm";
+  gtmLabel?: string; // ボタンの設置箇所を識別するためのラベル
 }) => {
   const handleClick = () => {
-    // GA4 にカスタムイベントを送信
-    window.gtag("event", "button_click", {
-      event_category: eventCategory,
-      event_label: eventLabel,
-    });
     // 実際のボタンの処理（例: ページ遷移など）
     window.location.href = downloadLink;
   };
   return (
-    <Button size={size} className={className} onClick={handleClick}>
+    <Button
+      size={size}
+      className={className}
+      onClick={handleClick}
+      data-gtm-event="app_download"
+      data-gtm-label={gtmLabel}
+    >
       <Download className="h-4 w-4" />
       macOS版ダウンロード
     </Button>
