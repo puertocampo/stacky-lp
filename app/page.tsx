@@ -52,6 +52,7 @@ export default function LandingPage() {
               downloadLink="https://example.com"
               eventCategory="header"
               eventLabel="app_download"
+              className="app_download"
             />
             {/* </Link> */}
           </div>
@@ -75,6 +76,7 @@ export default function LandingPage() {
                     downloadLink="https://example.com"
                     eventCategory="hero"
                     eventLabel="app_download"
+                    className="app_download"
                   />
                 </div>
               </div>
@@ -325,6 +327,7 @@ export default function LandingPage() {
                   downloadLink="https://example.com"
                   eventCategory="download"
                   eventLabel="app_download"
+                  className="app_download"
                 />
               </div>
             </div>
