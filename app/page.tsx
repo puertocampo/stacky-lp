@@ -50,7 +50,7 @@ export default function LandingPage() {
               </Button> */}
             <MacAppDownloadButton
               downloadLink="https://example.com"
-              gtmLabel="header"
+              gtmLabel="section-header"
             />
             {/* </Link> */}
           </div>
@@ -72,7 +72,7 @@ export default function LandingPage() {
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <MacAppDownloadButton
                     downloadLink="https://example.com"
-                    gtmLabel="hero"
+                    gtmLabel="section-hero"
                   />
                 </div>
               </div>
@@ -321,7 +321,7 @@ export default function LandingPage() {
                 </Button> */}
                 <MacAppDownloadButton
                   downloadLink="https://example.com"
-                  gtmLabel="download"
+                  gtmLabel="section-download"
                 />
               </div>
             </div>
