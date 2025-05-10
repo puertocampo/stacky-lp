@@ -27,9 +27,9 @@ const MacAppDownloadButton = ({
   return (
     <Button
       size={size}
-      className={`${className} app_download`}
+      className={`${className} app-download`}
       onClick={handleClick}
-      data-gtm-event="app_download"
+      data-gtm-event="app-download"
       data-gtm-label={gtmLabel}
     >
       <Download className="h-4 w-4" />
