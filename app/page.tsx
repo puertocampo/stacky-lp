@@ -174,7 +174,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mx-auto grid gap-8 py-12 sm:grid-cols-2 md:grid-cols-4">
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-4 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
                   <Layers className="h-8 w-8 text-primary" />
                 </div>
@@ -183,7 +183,7 @@ export default function LandingPage() {
                   ブラウザを常に最前面に固定して、必要な情報をいつでも確認できます。
                 </p>
               </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-4 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
                   <Eye className="h-8 w-8 text-primary" />
                 </div>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                   ウィンドウの半透明化・透明度を自由に調整して作業環境に合わせられます。
                 </p>
               </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-4 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
                   <Star className="h-8 w-8 text-primary" />
                 </div>
@@ -201,7 +201,7 @@ export default function LandingPage() {
                   よく使うWebサイトをお気に入りに追加して、すぐにアクセスできます。
                 </p>
               </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-4 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
                   <SquareDashedMousePointer className="h-8 w-8 text-primary" />
                 </div>
@@ -228,7 +228,7 @@ export default function LandingPage() {
                   💎 すべての機能を無料開放中！ 💎
                 </p>
               </div>
-              <div className="mx-auto w-full max-w-sm space-y-2 py-8">
+              <div className="mx-auto w-[300px] max-w-sm space-y-2 py-8">
                 <div className="rounded-lg border bg-card p-8 shadow-sm">
                   <div className="flex flex-col gap-2">
                     <h3 className="text-xl font-bold">β版</h3>
