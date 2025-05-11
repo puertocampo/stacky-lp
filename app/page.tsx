@@ -8,9 +8,13 @@ import {
   Layers,
   Bookmark,
   MousePointer2,
+  SquareDashedMousePointer,
   Download,
+  Star,
 } from "lucide-react";
 import MacAppDownloadButton from "@/components/ui/mac-app-download-button";
+import Emoji from "@/components/ui/emoji";
+
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -26,7 +30,7 @@ export default function LandingPage() {
                 href="#experience"
                 className="text-sm font-medium transition-colors hover:text-primary"
               >
-                体験
+                Stackyとは?
               </Link>
               <Link
                 href="#features"
@@ -66,7 +70,9 @@ export default function LandingPage() {
                     かっちり開発、まったり作業
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    ブラウザをピン留めして、タスクを視界から逃さない。
+                    ブラウザをワンクリックでピン留め。
+                    <br />
+                    もうタスクを視界から逃さない。
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -99,21 +105,26 @@ export default function LandingPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  プロダクト体験
+                  Stackyとは?
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Stackyがもたらす新しい作業体験
+                  Stackyは、ブラウザを最前面にピン留めし半透明化することのできるmacOSアプリです。
+                  <br />
+                  タスクボードや「ながら動画」を視界から逃さず、作業とブラウザの両方に集中力を維持できるよう、あなたをサポートします。
                 </p>
               </div>
             </div>
             <div className="mx-auto grid gap-8 py-12 md:grid-cols-2">
               <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
-                  <Pin className="h-8 w-8 text-primary" />
+                  <Emoji symbol="🚀" label="rocket" size={32} />
                 </div>
-                <h3 className="text-xl font-bold">仕事モード</h3>
+                <h3 className="text-xl font-bold">バリバリ仕事モード</h3>
                 <p className="text-muted-foreground text-center">
-                  どこに置いたか忘れず、いつでも参照できるTODOメモ帳として活用できます。
+                  どこに置いたかもう見失わない。
+                  <br />
+                  あなたの使い慣れた
+                  Webタスクボードを「ふせん」として活用できます。
                 </p>
                 <div className="relative w-full aspect-video overflow-hidden rounded-lg border">
                   <Image
@@ -124,14 +135,17 @@ export default function LandingPage() {
                     className="w-full object-cover"
                   />
                 </div>
+                {/* ブラウザ内に表示する */}
               </div>
               <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
-                  <Play className="h-8 w-8 text-primary" />
+                  <Emoji symbol="☕️" label="rocket" size={32} />
                 </div>
-                <h3 className="text-xl font-bold">リラックスモード</h3>
+                <h3 className="text-xl font-bold">リラックス作業モード</h3>
                 <p className="text-muted-foreground text-center">
-                  動画を視聴しながらまったり作業できる環境を提供します。
+                  「ながら動画」をゆったり作業のお供に。
+                  <br />
+                  動画などを視聴しながら、まったりと作業できる環境を提供します。
                 </p>
                 <div className="relative w-full aspect-video overflow-hidden rounded-lg border">
                   <Image
@@ -155,7 +169,7 @@ export default function LandingPage() {
                   プロダクトの機能
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  すべての操作がワンクリックで完結
+                  あなたの作業モードに応じて、ウィンドウの状態がすべてワンクリックで切り替えられます。
                 </p>
               </div>
             </div>
@@ -180,21 +194,20 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
-                  <Bookmark className="h-8 w-8 text-primary" />
+                  <Star className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">お気に入り追加</h3>
                 <p className="text-muted-foreground text-center">
-                  よく使うサイトをお気に入りに追加して、すぐにアクセスできます。
+                  よく使うWebサイトをお気に入りに追加して、すぐにアクセスできます。
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
                 <div className="rounded-full bg-primary/10 p-4">
-                  <MousePointer2 className="h-8 w-8 text-primary" />
+                  <SquareDashedMousePointer className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">クリック透過</h3>
                 <p className="text-muted-foreground text-center">
-                  Mouse event
-                  passthroughで下のウィンドウを操作しながら情報を表示できます。
+                  クリック透過ウィンドウで情報を確認しながら、作業の妨げなくメインタスクに集中できます。
                 </p>
               </div>
             </div>
@@ -212,14 +225,19 @@ export default function LandingPage() {
                   価格
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  現状β版のため、全機能を無料で提供しています。
+                  💎 すべての機能を無料開放中！ 💎
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2 py-8">
                 <div className="rounded-lg border bg-card p-8 shadow-sm">
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold">β版</h3>
-                    <p className="text-4xl font-bold">¥0</p>
+                    <h3 className="text-xl font-bold">β版</h3>
+                    <div className="flex justify-center items-center">
+                      <p className="text-6xl font-bold">¥0</p>
+                      <span className="text-sm text-muted-foreground ml-1">
+                        期間限定
+                      </span>
+                    </div>
                     <p className="text-muted-foreground">
                       すべての機能が利用可能
                     </p>
@@ -315,10 +333,6 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2 py-8">
-                {/* <Button size="lg" className="w-full gap-2">
-                  <Download className="h-4 w-4" />
-                  macOS版ダウンロード
-                </Button> */}
                 <MacAppDownloadButton
                   downloadLink="https://example.com"
                   gtmLabel="section-download"
