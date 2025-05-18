@@ -22,7 +22,12 @@ export default function LandingPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="#hero" className="flex items-center gap-2">
-              <Pin className="h-6 w-6" />
+              <Image
+                src="/icon.png"
+                alt="Stackyのロゴ"
+                width={32}
+                height={32}
+              />
               <span className="text-xl font-bold">Stacky</span>
             </Link>
             <nav className="hidden md:flex items-center space-x-6 ml-6">
