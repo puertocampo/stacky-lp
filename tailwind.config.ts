@@ -20,14 +20,27 @@ const config = {
     },
     extend: {
       colors: {
+        // blue: {
+        //   50: "#e6edf5",
+        //   100: "#ccdaeb",
+        //   200: "#99b5d7",
+        //   300: "#6691c3",
+        //   400: "#336caf",
+        //   500: "#1b3a6c",
+        //   600: "#162f57",
+        //   700: "#112442",
+        //   800: "#0b182c",
+        //   900: "#060c17",
+        //   DEFAULT: "#1b3a6c",
+        // },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -38,8 +51,8 @@ const config = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
@@ -76,6 +89,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
 export default config
