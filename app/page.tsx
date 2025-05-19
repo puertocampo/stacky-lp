@@ -14,6 +14,9 @@ import {
 } from "lucide-react";
 import MacAppDownloadButton from "@/components/ui/mac-app-download-button";
 import Emoji from "@/components/ui/emoji";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default function LandingPage() {
   return (
@@ -58,7 +61,7 @@ export default function LandingPage() {
                 macOS版ダウンロード
               </Button> */}
             <MacAppDownloadButton
-              downloadLink="https://example.com"
+              downloadLink={process.env.NEXT_PUBLIC_DOWNLOAD_LINK || ""}
               gtmLabel="section-header"
             />
             {/* </Link> */}
@@ -82,7 +85,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <MacAppDownloadButton
-                    downloadLink="https://example.com"
+                    downloadLink={process.env.NEXT_PUBLIC_DOWNLOAD_LINK || ""}
                     gtmLabel="section-hero"
                   />
                 </div>
@@ -339,7 +342,7 @@ export default function LandingPage() {
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2 py-8">
                 <MacAppDownloadButton
-                  downloadLink="https://example.com"
+                  downloadLink={process.env.NEXT_PUBLIC_DOWNLOAD_LINK || ""}
                   gtmLabel="section-download"
                 />
               </div>
